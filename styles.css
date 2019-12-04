@@ -1,0 +1,31 @@
+.steag {
+    height: 300px;
+    margin-right: 20px;
+}
+
+.steaguri {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+audio {
+    display: none;
+}
+
+.coloana {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#arrow {
+    width: 350px;
+    visibility: hidden;
+}
