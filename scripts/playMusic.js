@@ -2,21 +2,21 @@ var taraAleasa = "";
 
 $("#romania").click(function() {
     oprireSunete();
-    var song = $("#basic").get(0);
+    var song = $("#leu").get(0);
     song.play();
     alegeTara("ro");
 });
 
 $("#uk").click(function() {
     oprireSunete();
-    var song = $("#basic").get(0);
+    var song = $("#lira").get(0);
     song.play();
     alegeTara("uk");
 });
 
 $("#germania").click(function() {
     oprireSunete();
-    var song = $("#basic").get(0);
+    var song = $("#euro").get(0);
     song.play();
     alegeTara("ge");
 });
@@ -26,9 +26,10 @@ $("#arrow").click(function() {
     if (taraAleasa == "ro") {
         url = "romaniaHtml/bancnote.html";
     } else if (taraAleasa == "uk") {
-
+        url = "ukHtml/bancnote.html";
     } else {
 
+        url = "germanyHtml/bancnote.html";
     }
     window.location.replace(url)
 });
