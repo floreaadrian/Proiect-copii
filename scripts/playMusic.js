@@ -1,5 +1,6 @@
 var taraAleasa = "";
 
+
 $("#romania").click(function() {
     oprireSunete();
     var song = $("#leu").get(0);

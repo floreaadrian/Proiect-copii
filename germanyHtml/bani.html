@@ -1,19 +1,24 @@
 <html>
 
 <head>
-    <title>Bancnote euro</title>
+    <title>Bani euro</title>
     <link rel="stylesheet" href="../styles.css">
     <script src="../scripts/jquery-3.4.1.min.js"></script>
 </head>
 
 <body background="../assets/wall.jpg" style="background-size: 100% 100%">
-    <audio preload="auto" id="basic" src="../assets/audio/InregistrareEuro.mp3" autoplay></audio>
+    <audio preload="auto" id="basic" src="../assets/audio/InregistrareLeu.mp3" autoplay></audio>
     <div class="coloana">
         <img id="nota" style="height: 150px; align-self: flex-start" src="../assets/note.png">
-        <img id="leu" style="height: 400px" src="../assets/bancnote/euro.jpeg">
+        <img id="leu" style="height: 400px" src="../assets/monede/1euro.png">
         <img id="arrow" src="../assets/arrow.png" />
     </div>
     <script src="../scripts/bancnote.js"></script>
+    <script>
+    $("#arrow").click(function() {
+        var url = "./ursi.html";
+        window.location.replace(url)
+    });</script>
 </body>
 
 </html>

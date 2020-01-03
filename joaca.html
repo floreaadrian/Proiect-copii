@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Invatare</title>
+    <title>Joaca</title>
     <link rel="stylesheet" href="styles.css">
     <script src="scripts/jquery-3.4.1.min.js"></script>
 </head>
@@ -10,13 +10,18 @@
 
     <audio class="music" id="leu" src="assets/audio/Romania.mp3"></audio>
     <div class="coloana">
-        <div class="steaguri">
-            <img id="invatare" class="steag" src="assets/book.png">
-            <img id="joaca" class="steag" src="assets/joystick.png">
-        </div>
         <img id="arrow" src="assets/arrow.png" />
     </div>
-    <script src="scripts/indexScript.js"></script>
+    <script>
+
+    $("#arrow").css({
+        visibility: "visible"
+    });
+    
+    $("#arrow").click(function() {
+        window.location.replace("./intrebari/1.html");
+    });
+    </script>
 </body>
 
 </html>

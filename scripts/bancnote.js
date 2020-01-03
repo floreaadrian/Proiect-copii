@@ -23,6 +23,6 @@ function oprireSunete() {
 }
 
 $("#arrow").click(function() {
-    var url = "../index.html";
+    var url = "./bani.html";
     window.location.replace(url)
 });
