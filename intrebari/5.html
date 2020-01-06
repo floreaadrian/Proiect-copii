@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>Intrebarea 2</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../scripts/jquery-3.4.1.min.js"></script>
+</head>
+
+<body background="../assets/wall.jpg" style="background-size: 100% 100%">
+
+    <audio class="music" id="intrebare" src="../assets/audio/Romania.mp3"></audio>
+    <audio class="music" id="bun" src="../assets/audio/Anglia.mp3"></audio>
+    <audio class="music" id="rau" src="../assets/audio/Germania.mp3"></audio>
+    <div class="coloana">
+        <img draggable="false" id="nota" style="height: 150px; align-self: flex-start" src="../assets/note.png">
+        <div class="steaguri">
+            <img draggable="false" id="gresit2" style="height: 200px; padding-right: 10px" src="../assets/monede/1euro.png">
+            <img draggable="false" id="gresit1" style="height: 200px; padding-right: 10px" src="../assets/bancnote/lira.jpg">
+            <img draggable="false" id="corect" style="height: 170px" src="../assets/monede/50bani.png">
+        </div>
+        <img draggable="false" id="arrow" src="../assets/arrow.png" />
+    </div>
+    <script src="chose.js"></script>
+    <script>
+        $("#arrow").click(function() {
+            window.location.replace("6.html")
+        });
+    </script>
+</body>
+
+</html>
