@@ -9,7 +9,7 @@
     justify-content: space-between;
 }
 
-audio {
+audio autoplay {
     display: none;
 }
 
