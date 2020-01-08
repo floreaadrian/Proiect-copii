@@ -3,7 +3,7 @@ var taraAleasa = "";
 
 $("#romania").click(function() {
     oprireSunete();
-    var song = $("#leu").get(0);
+    var song = $("#leul").get(0);
     song.play();
     alegeTara("ro");
 });
