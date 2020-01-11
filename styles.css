@@ -13,6 +13,23 @@ audio {
     display: none;
 }
 
+span {
+    display: inline-block;
+    height: 50px;
+    font-size: 250%;
+    /*sets height of element*/
+    background: white;
+    /*sets the background of this element (here a solid colour)*/
+    transition: all 0.6s;
+    /*sets a transition (for hover effect)*/
+    padding-left: 200px;
+    /*sets 'padding'*/
+    padding-right: 200px;
+    /*sets 'padding'*/
+    line-height: 50px;
+    /*for this, it sets vertical alignment*/
+}
+
 .coloana {
     position: absolute;
     top: 0;
@@ -28,4 +45,57 @@ audio {
 #arrow {
     width: 350px;
     visibility: hidden;
+}
+
+#corect {
+    /* background: linear-gradient(270deg, #1ad9a8, #13ac85, #0c8969, #0c8969);
+    background-size: 800% 800%; */
+    background: white;
+    -webkit-animation: AnimationName 2s ease infinite;
+    -moz-animation: AnimationName 2s ease infinite;
+    animation: AnimationName 2s ease infinite;
+}
+
+#gresit1 {
+    background: white;
+}
+
+#gresit2 {
+    background: white;
+}
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
 }

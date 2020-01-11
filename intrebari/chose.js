@@ -1,6 +1,8 @@
 var raspunsAles = "";
 
 $("#corect").click(function() {
+    $(this).css("background", 'linear-gradient(270deg, #1ad9a8, #a5df30, #d228ee, #300c89)');
+    $(this).css('background-size', '800% 800%');
     alegeRaspuns("corect");
 });
 
@@ -38,6 +40,10 @@ $("#nota").click(function() {
     oprireSunete();
     var song = $("#intrebare").get(0);
     song.play();
+});
+
+$("#home").click(function() {
+    window.location.replace("../index.html");
 });
 
 
