@@ -5,3 +5,9 @@ $("#invatare").click(function() {
 $("#joaca").click(function() {
     window.location.replace("./joaca.html")
 });
+
+const oneday = 60 * 60 * 24 * 1000;
+if (localStorage['lastTime'] - Date.now() > oneday) {
+    localStorage['lastTime'] = Date.now();
+    window.location.replace("./invatare.html")
+}
